@@ -115,18 +115,17 @@ function operadoresLogicos(num1, num2, num3) {
   if(num1>num2 && num1>num3 && num1>0) { 
     return "Número 1 es mayor y positivo";
   }
-
-  if(num1<0 || num2<0 || num3<0) {
+  if(num1 < 0 || num2 < 0 || num3 < 0) {
     return "Hay negativos";
   }
 
  if(num3>num1 && num3>num2) {
     return num3+1;  
   }
- if(num1==0 || num2==0 || num3 ==0) {
-    return "Error";
+ if ( num1 === 0 || num2 === 0 || num3 === 0) {
+  return "Error";
   }
-  return false
+  return false;
 }
 
 function esPrimo(numero) {
@@ -173,7 +172,17 @@ function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
-}
+  var d = numero;
+  var n = 0 ;
+  do {
+    n = n + 1;
+    d = d + 5;
+  }
+  while (n<8);
+  return d;
+  }
+
+
 
 
 // No modificar nada debajo de esta línea
