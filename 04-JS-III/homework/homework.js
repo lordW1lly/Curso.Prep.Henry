@@ -27,12 +27,10 @@ function incrementarPorUno(array) {
   // y devuelve el array
   // Tu código:
   var nuevoArray = [];
-  for(let i = 0; i < array.lenght; i++) {
+  for(var i = 0; i < array.length; i++) {
     nuevoArray[i] = array[i] + 1;
-  };
-
-  return nuevoArray;
-
+    }
+    return nuevoArray;
 }
 
 function agregarItemAlFinalDelArray(array, elemento) {
@@ -142,13 +140,15 @@ function cuentoElementos(arreglo){
 
 
 function diaDeLaSemana(numeroDeDia) {
-  //Suponga que los días de la semana se codifican como 1 = Domingo, 2 = Lunes y así sucesivamente. 
-  //Realiza una función que dado el número del día de la semana, retorne: Es fin de semana
-  //si el día corresponde a Sábado o Domingo y “Es dia Laboral” en caso contrario. 
-  //Escribe tu código aquí   
-    if (numeroDeDia === 1 || numeroDeDia === 0)  return "Es fin de semana" ;
-    "Es dia Laboral";
-} 
+    //Suponga que los días de la semana se codifican como 1 = Domingo, 2 = Lunes y así sucesivamente. 
+    //Realiza una función que dado el número del día de la semana, retorne: Es fin de semana
+    //si el día corresponde a Sábado o Domingo y “Es dia Laboral” en caso contrario. 
+    //Escribe tu código aquí   
+    if (numeroDeDia === 7 || numeroDeDia === 1) {
+        return "Es fin de semana"
+    };
+    return "Es dia Laboral";
+}
 
 
 function empiezaConNueve(n) {
@@ -213,21 +213,25 @@ function breakStatement(numero) {
     // Tu código:
     var aumentado = [];
     var suma = numero;
-    for (let i = 0; i < 10; i++) {
-        suma = numero[i] + 2;
-
+    for (var i = 0; i < 10; i++) {
+        suma = suma + 2;
         if (suma === i) break;
         else {
             aumentado.push(suma);
         }
-
-        if (i < 10) {
-            return "Se interrumpió la ejecución";
-        };
-        return aumentado;
-
     }
+    if (i < 10) {
+        return "Se interrumpió la ejecución";
+    }
+    else {
+        return aumentado;
+    }
+     
+    
+    return aumentado
 }
+    
+
 
 function continueStatement(numero) {
   //Iterar en un bucle aumentando en 2 el numero recibido hasta un límite de 10 veces.
