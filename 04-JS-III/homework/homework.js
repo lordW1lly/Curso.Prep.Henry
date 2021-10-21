@@ -29,7 +29,7 @@ function incrementarPorUno(array) {
   var nuevoArray = [];
   for(let i = 0; i < array.lenght; i++) {
     nuevoArray[i] = array[i] + 1;
-}
+  };
 
   return nuevoArray;
 
@@ -146,7 +146,7 @@ function diaDeLaSemana(numeroDeDia) {
   //Realiza una función que dado el número del día de la semana, retorne: Es fin de semana
   //si el día corresponde a Sábado o Domingo y “Es dia Laboral” en caso contrario. 
   //Escribe tu código aquí   
-    if (numeroDeDia === 1 || numeroDeDia === 7) { return "Es fin de semana" };
+    if (numeroDeDia === 1 || numeroDeDia === 0)  return "Es fin de semana" ;
     "Es dia Laboral";
 } 
 
@@ -204,15 +204,30 @@ function mayorACien(array) {
 
 
 function breakStatement(numero) {
-  //Iterar en un bucle aumentando en 2 el numero recibido hasta un límite de 10 veces.
-  //Guardar cada nuevo valor en un array. 
-  //Devolver el array
-  //Si en algún momento el valor de la suma y la cantidad de iteraciones coinciden, debe interrumpirse la ejecución y 
-  //devolver: "Se interrumpió la ejecución"
-  //Pista: usá el statement 'break'
-  // Tu código:
-}
+    //Iterar en un bucle aumentando en 2 el numero recibido hasta un límite de 10 veces.
+    //Guardar cada nuevo valor en un array. 
+    //Devolver el array
+    //Si en algún momento el valor de la suma y la cantidad de iteraciones coinciden, debe interrumpirse la ejecución y 
+    //devolver: "Se interrumpió la ejecución"
+    //Pista: usá el statement 'break'
+    // Tu código:
+    var aumentado = [];
+    var suma = numero;
+    for (let i = 0; i < 10; i++) {
+        suma = numero[i] + 2;
 
+        if (suma === i) break;
+        else {
+            aumentado.push(suma);
+        }
+
+        if (i < 10) {
+            return "Se interrumpió la ejecución";
+        };
+        return aumentado;
+
+    }
+}
 
 function continueStatement(numero) {
   //Iterar en un bucle aumentando en 2 el numero recibido hasta un límite de 10 veces.
@@ -221,7 +236,24 @@ function continueStatement(numero) {
   //Cuando el número de iteraciones alcance el valor 5, no se suma en ese caso y se continua con la siguiente iteración
   //Pista: usá el statement 'continue'
   // Tu código:
+    var aumentado = [];
+    var suma = numero;
+    for (let i = 0; i < 10; i++) {
+        if (i === 5) continue;
+        else {
+            suma = suma + 2;
+            aumentado.push(suma)
+        }
+    }
+    return aumentado;
+
+        
 }
+      
+
+
+
+
 
 
 // No modificar nada debajo de esta línea
