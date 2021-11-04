@@ -1,15 +1,15 @@
-body {
-    background-image: url("http://waifu2x.udp.jp/api")
-  
-}
-.divClass {
-    display: flex;
-  justify-content: center;
-  align-items: center;
-}
+body {background-image: url("https://us.123rf.com/450wm/belopoppa/belopoppa1401/belopoppa140100016/25463494-color-de-fondo-con-hojas-patr%C3%B3n-sin-fisuras-para-su-dise%C3%B1o-fondos-de-pantalla-patrones-de-relleno-fo.jpg?ver=6")}
+
+
 
 body {
-    align-items: center;
-    justify-content: center;
     text-align: center;
+    align-content: center;
+}
+
+img {
+    align-content: center;
+    display: flex;
+    justify-content: center;
+
 }
