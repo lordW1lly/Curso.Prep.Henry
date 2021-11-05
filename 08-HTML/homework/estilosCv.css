@@ -33,8 +33,9 @@ img {
 }
 body{
     background-image: url("https://previews.123rf.com/images/oksancia/oksancia1307/oksancia130704342/21263924-pastel-blue-fabric-ikat-diamond-seamless-pattern-background.jpg");
-    text-align: center;
+    text-align: justify;
     font-size: 20;
+    display: block;
 
 }
 

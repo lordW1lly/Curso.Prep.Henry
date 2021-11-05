@@ -5,6 +5,9 @@ h1 {
 
 img {
     width: 400px;
+    display: block;
+    align-content: center;  
+    text-align:center;
 }
 
 #thirdDiv {
@@ -16,6 +19,7 @@ img {
     padding: 50px;
     text-align: center;
     align-content: center;
+
 }
 #spanId {
     font-size: 18px;
